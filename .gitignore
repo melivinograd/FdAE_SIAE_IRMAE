@@ -1,0 +1,5 @@
+# Ignore all weights.h5 files
+*.h5
+
+# Ignore __pycache__ folder
+__pycache__/
