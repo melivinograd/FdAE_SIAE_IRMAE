@@ -1,0 +1,18 @@
+{
+    "d": 10,
+    "l": 0,
+    "train_size": 200,
+    "test_size": 200,
+    "rolls": 10,
+    "imgs_shape": 512,
+    "batch_size": 32,
+    "epochs": 200,
+    "restart": false,
+    "optimizer": "adam",
+    "L1_lambda": 1e-2,
+    "lr": 1e-4,
+    "ra":"1e8",
+    "checkpoint": "./checkpoint/",
+    "data_path": "./data",
+    "seed": 42
+}
