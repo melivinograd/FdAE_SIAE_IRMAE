@@ -68,16 +68,16 @@ class Decoder(Model):
 class AE(Model):
     def __init__(self, args):
         super(AE, self).__init__()
-        n = args['n']
+        d = args['d']
         self.l = args['l']
         shape = args['imgs_shape']
         self.L1_weight = args['L1_lambda']
 
         if self.l > 0:
-            self.mlp = MLP(n, self.l)
+            self.mlp = MLP(d, self.l)
 
-        self.enc = Encoder(shape, n)
-        self.dec = Decoder(shape, n)
+        self.enc = Encoder(shape, d)
+        self.dec = Decoder(shape, d)
 
     def encode(self, x):
         z = self.enc(x)
