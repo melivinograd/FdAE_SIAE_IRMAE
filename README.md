@@ -1,6 +1,6 @@
-# Project Title
+# Reduced Representations of Turbulent Rayleigh-Bénard Flows via Autoencoders
 
-This repository contains the models used for dimensionality reduction implemented in TensorFlow, applied to a Rayleigh-Bénard system. This repository accompanies the work outlined in the following paper: [Paper Title](link).
+This repository contains the models used for dimensionality reduction implemented in TensorFlow, applied to a Rayleigh-Bénard system. This repository accompanies the work outlined in the following paper: [Reduced Representations of Turbulent Rayleigh-Bénard Flows via Autoencoders](link).
 
 ## Outline
 
@@ -38,14 +38,18 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-1. Configure the model: Modify the `args.json` file to set the desired parameters and hyperparameters for the model and training.
+1. **Configure the model**: Modify the `args.json` file to set the desired parameters and hyperparameters for the model and training.
 
-2. Train the model: Run the `train.py` script to start the training process.
-```bash
-python3 train.py
-```
+    - `d`: The dimensionality of the reduced space in the dimensionality reduction model, the bottleneck layer size.
+    - `L1_lambda`: The regularization parameter for L1 regularization, used to encourage sparsity in the model weights. If set to zero, it is a regular FdAE.
+    - `l`: Amount of linear layers to add for IRMAE. If set to zero, it is a regular FdAE.
 
-3. Analyze the results: Use `singular.py` and `iqr.py` to analyze the results and extract insights from the trained models.
+2. **Train the model**: Run the `train.py` script to start the training process.
+    ```bash
+    python3 train.py
+    ```
+
+3. **Analyze the results**: Use `singular.py` and `iqr.py` to analyze the results and extract insights from the trained model.
 
 ### Data
 The data used for this project is located in the `data/` directory. For more information on the data, refer to the `data/README.md` file.
