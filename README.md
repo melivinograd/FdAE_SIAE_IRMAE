@@ -32,8 +32,8 @@ To run the code in this repository, you will need:
 Clone the repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/melivinograd/FdAE_SIAE_IRMAE
+cd FdAE_SIAE_IRMAE
 pip install -r requirements.txt
 ```
 
