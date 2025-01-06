@@ -54,7 +54,8 @@ pip install -r requirements.txt
 ### Data
 The data used in this project is available upon request. It includes datasets for Rayleigh-Bénard flows at the following Rayleigh numbers: \(10^6\), \(5 \times 10^6\), \(7.5 \times 10^6\), \(10^7\), \(1.75 \times 10^7\), \(2.5 \times 10^7\), \(5 \times 10^7\), and \(10^8\).
 
+If you are interested in accessing the data, please contact me at [mvinograd@udesa.edu.ar](mailto:mvinograd@udesa.edu.ar).
+
 ### Citation
 If you use this code or data in your research, please cite our paper: [https://arxiv.org/abs/2410.01496](https://arxiv.org/abs/2410.01496). It will soon be available in *Journal of Fluid Mechanics (JFM)*.
-
 
